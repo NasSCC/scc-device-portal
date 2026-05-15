@@ -110,7 +110,7 @@ h1{
   padding: 14px;
 
   margin-top: 12px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 /* =========================
@@ -126,14 +126,8 @@ h1{
   box-shadow:
     0 0 0 1px rgba(122, 167, 255, 0.08) inset;
 
-  margin-top: 4px;
+  margin-top: 0;
   margin-bottom: 28px;
-}
-
-.info-row{
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
 }
 
 .info-icon{
