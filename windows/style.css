@@ -10,12 +10,19 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 600px at 20% 0%, rgba(122,167,255,0.18), transparent 55%),
-              radial-gradient(1200px 600px at 80% 10%, rgba(255,211,107,0.10), transparent 60%),
-              var(--bg);
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(122,167,255,0.18), transparent 55%),
+    radial-gradient(1200px 600px at 80% 10%, rgba(255,211,107,0.10), transparent 60%),
+    var(--bg);
+
   color: var(--text);
   line-height: 1.45;
 }
@@ -53,13 +60,20 @@ h1{
   font-size: 1.35rem;
   margin: 0;
 }
+
 .subtitle{
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 0.98rem;
 }
 
-.notice, .notice-strong, .tip{
+/* =========================
+   Notices / Tips
+========================= */
+
+.notice,
+.notice-strong,
+.tip{
   background: rgba(21,24,35,0.72);
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -72,23 +86,79 @@ h1{
   box-shadow: 0 0 0 1px rgba(255,211,107,0.12) inset;
 }
 
-.notice h2, .notice-strong h2{
+.notice h2,
+.notice-strong h2{
   font-size: 1.05rem;
   margin: 0 0 6px;
 }
+
 .notice ul{
   margin: 8px 0 0 18px;
 }
+
 .tip{
   background: rgba(16,19,27,0.8);
 }
+
+/* =========================
+   Info Notice Banner
+========================= */
+
+.notice-info{
+  background: rgba(47, 99, 255, 0.12);
+  border: 1px solid rgba(122, 167, 255, 0.38);
+  box-shadow: 0 0 0 1px rgba(122, 167, 255, 0.08) inset;
+}
+
+.info-row{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.info-icon{
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 50%;
+  background: #2f63ff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.info-content strong{
+  display: block;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.info-content p{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* =========================
+   Steps
+========================= */
 
 .steps{
   padding: 10px 0 22px;
 }
 
 .step{
-  background: linear-gradient(180deg, rgba(21,24,35,0.85), rgba(16,19,27,0.85));
+  background: linear-gradient(
+    180deg,
+    rgba(21,24,35,0.85),
+    rgba(16,19,27,0.85)
+  );
+
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 14px;
@@ -118,6 +188,7 @@ h1{
   margin: 0 0 4px;
   font-size: 1.12rem;
 }
+
 .step-title p{
   margin: 4px 0 0;
   color: var(--muted);
@@ -150,6 +221,10 @@ h1{
   background: var(--card2);
 }
 
+/* =========================
+   Footer
+========================= */
+
 .footer-card{
   background: rgba(21,24,35,0.72);
   border: 1px solid var(--line);
@@ -177,10 +252,37 @@ h1{
   font-size: 0.95rem;
 }
 
-/* Small screens: slightly tighter spacing */
+/* =========================
+   Mobile
+========================= */
+
 @media (max-width: 420px){
-  .container{ width: calc(100% - 22px); }
-  .step{ padding: 12px; }
-  .step-head{ grid-template-columns: 42px 1fr; }
-  .step-num{ width: 42px; height: 42px; }
+
+  .container{
+    width: calc(100% - 22px);
+  }
+
+  .step{
+    padding: 12px;
+  }
+
+  .step-head{
+    grid-template-columns: 42px 1fr;
+  }
+
+  .step-num{
+    width: 42px;
+    height: 42px;
+  }
+
+  .info-row{
+    gap: 10px;
+  }
+
+  .info-icon{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    font-size: 0.95rem;
+  }
 }
