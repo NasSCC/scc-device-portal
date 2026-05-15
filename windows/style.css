@@ -93,7 +93,8 @@ h1{
 
 .tip{
   background: rgba(16,19,27,0.8);
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
 
 .notice-info{
@@ -101,8 +102,8 @@ h1{
   border: 1px solid rgba(122, 167, 255, 0.38);
   box-shadow: 0 0 0 1px rgba(122, 167, 255, 0.08) inset;
 
-  margin-top: -6px;
-  margin-bottom: 18px;
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 .info-row{
