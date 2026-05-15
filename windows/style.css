@@ -108,8 +108,9 @@ h1{
   background: rgba(47, 99, 255, 0.12);
   border: 1px solid rgba(122, 167, 255, 0.38);
   box-shadow: 0 0 0 1px rgba(122, 167, 255, 0.08) inset;
-  margin-top: 12px;
-  margin-bottom: 36px;
+
+  margin-top: -2px;
+  margin-bottom: 34px;
 }
 
 .info-row{
