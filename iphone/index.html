@@ -1,257 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile Device Setup Guide – Salford City Council</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding: 20px;
-      background-color: #fdfdfd;
-    }
-    h1, h2 {
-      color: #003865;
-    }
-    details {
-      margin-bottom: 1em;
-      background: #f4f4f4;
-      padding: 1em;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-    img {
-      margin-top: 10px;
-      max-width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .download-guide {
-      background: #003865;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin: 1em 0;
-    }
-  </style>
-</head>
-<body>
+:root {
+  --blue: #005eb8;
+  --blue-dark: #06345c;
+  --navy: #061b3a;
+  --magenta: #e6007e;
+  --bg: #f4f8ff;
+  --panel: #ffffff;
+  --text: #061b3a;
+  --muted: #4b5d78;
+  --border: #d9e4f2;
+  --shadow: 0 18px 45px rgba(0, 64, 128, 0.12);
+}
 
-  <h1>📱 Mobile Device Setup Guide</h1>
-  <p>Welcome to your new mobile device. This guide will help you unbox, configure, and use your device correctly.</p>
+* {
+  box-sizing: border-box;
+}
 
-  <a href="../user_guide.pdf" class="download-guide" download>⬇️ Download PDF Version</a>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-  <h2>🧭 Setup Guide</h2>
+.wrap {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
 
-  <details>
-    <summary>📦 What’s in the box?</summary>
-    <ul>
-      <li>iPhone</li>
-      <li>USB-C Charging cable</li>
-      <li>SIM tray tool</li>
-    </ul>
-    <img src="../images/unboxing.png" alt="Box contents">
-  </details>
+.hero {
+  background:
+    radial-gradient(circle at 70% 18%, rgba(0, 120, 255, 0.35), transparent 34%),
+    linear-gradient(135deg, #005eb8 0%, #06345c 55%, #061b3a 100%);
+  color: #fff;
+  padding: 42px 0;
+}
 
-  <details> 
-  <summary>📶 Step 0: Insert the SIM Card</summary> 
-  <p>Before powering on the iPhone, please insert the SIM card as follows:</p> 
-  <ol> 
-    <li>Find the SIM tray on the side of the iPhone.</li> 
-    <li>Use the SIM ejector tool to gently push into the small hole.</li> 
-    <li>The tray will pop out — place the SIM card in the tray, aligning the notched corner correctly.</li> 
-    <li>Slide the tray back in gently until it clicks into place.</li> 
-  </ol> 
-  <p><strong>Important:</strong> Make sure the SIM card is seated properly before powering on the device.</p> 
-  <img src="../images/sim_insertion_placeholder.png" alt="Inserting SIM card into iPhone" width="400"> 
-  </details> 
+.back-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
 
-  <details>
-    <summary>⚙️ Step 1: Turn on and connect to Wi-Fi</summary>
-    <p>1. Power on your iPhone</p> 
-    <p>2. Set the language</p>
-    <p>3. Set the Region and appearance</p> 
-    <p>4. Click Set up without another device</p>
-    <p>5. Select a secure Wi-Fi network (home or a personal network).</p>
-    <img src="../images/wifi_setup_placeholder.png" alt="Wi-Fi Setup">
-  </details>
+.back-link:hover {
+  text-decoration: underline;
+}
 
-  <details>
-    <summary>🔑 Step 2: Enrol Remote Management</summary>
-    <p>Enrol the iPhone with Remote Management.</p>
-    <p>Sign in using your council email and password.</p>
-    <img src="../images/remote_management_login_placeholder.png" alt="Intune login">
-  </details>
+.eyebrow {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
 
-  <details>
-    <summary>🔑 Step 3: Create an iPhone Passcode and enable Location Services</summary>
-    <p>Set up Face ID (Optional)</p> 
-    <p>Create a Passcode</p>
-    <p>Enable Location Services.</p>
-    <img src="../images/create_passcode_placeholder.png" alt="Intune login">
-  </details>
-  
-  <details>
-    <summary>📲 Step 4: Company Portal App</summary>
-    <p>Locate the <strong>Company Portal App</strong> and sign in using your work email and password.</p>
-    <img src="../images/company_portal_placeholder.png" alt="Profile install">
-  </details>
+.hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1;
+  font-weight: 800;
+}
 
-    <details>
-    <summary>📲 Step 5: Set Device Category</summary>
-    <p>Device category, select <p><strong>SCC Mobile Phones</strong></p> 
-    <p>Tap <strong>Continue</strong></p>
-    <p>The phone will take a couple minutes to finsh the enrolment and check device settings.</p>
-    <img src="../images/device_profile_placeholder.png" alt="Profile install">
-  </details>
+.lead {
+  margin: 0;
+  max-width: 720px;
+  font-size: 1.25rem;
+  line-height: 1.45;
+}
 
-    <details>
-    <summary>📲 Step 6: MS Defender App</summary>
-    <p>Locate the <strong>MS Defender App</strong>, select your work account to sign in</p>
-    <p>Agree to the Terms of Use and click <strong>Accept</strong><p> 
-    <p>Tap <strong>Allow</strong> Microsoft Defender to set up a local VPN connection</p>
-    <p>Tap <strong>Allow </strong>notifications.</p>
-    <img src="../images/defender_app_placeholder.png" alt="Profile install">
-  </details>
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
 
-    <details>
-    <summary>📲 Step 7: All set</summary>
-    <p>The device is ready!</p> 
-    <p>It will receive regular system and security updates from Apple.</p> 
-    <p>Ensure they are installed to keep the device secure and compliant.</p>
-  </details>
+.meta span {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 700;
+}
 
-  <h2>📋 Device Usage Tips</h2>
-  <details>
-    <summary>✅ Best Practices</summary>
-    <ul>
-      <li>Do not sign in with a personal Apple ID or iTunes account.</li>
-      <li>Do not install unauthorised apps.</li>
-      <li>Data and call usage is monitored – personal use is not permitted.</li>
-      <li>Keep your device locked when not in use.</li>
-    </ul>
-  </details>
+.magenta-line {
+  height: 7px;
+  background: var(--magenta);
+}
 
-  <h2>📖 Frequently Asked Questions (FAQ)</h2>
+main.wrap {
+  padding-top: 34px;
+}
 
-  <details>
-    <summary>How do I request a new mobile device?</summary>
-    <p>Submit a ticket via Rubix using the following options</p>
-    <p>• Ticket Type:<strong>Do you want us to do something new or make a change to how something works?</strong></p> 
-    <p>• Ticket area:<strong>Hardware</strong></p> 
-    <p>• Category:<strong>Smartphone</strong></p> 
-    <p>For a New Device/SIM, use the following:</p> 
-    <p>• Sub category:<strong>Request New Mobile Device/SIM</strong></p>
-    <p>This ensures the correct request form is used and includes the necessary cost code and required approval</p>
-  </details>
+.notice-card,
+.guide-section,
+.help-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
 
-  <details>
-    <summary>How do I request an app not listed?</summary>
-    <p>Log a Rubix request including the app name, store link, cost and justification. Our security team will review your request.</p>
- </details>
-   
-  <details>
-    <summary>What apps are available by default?</summary>
-    <p>Outlook, Teams, Company Portal, GoBright, Authenicator, MS Defender and WhatsApp are included. Additional apps depend on your role.</p>
-  </details>
+.notice-card {
+  padding: 26px;
+  margin-bottom: 28px;
+  border-left: 7px solid var(--magenta);
+}
 
-  <details>
-    <summary>Can I make personal calls or use mobile data?</summary>
-    <p>No. All usage is tracked via weekly/monthly reports and must comply with council policy.</p>
-  </details>
+.notice-card h2,
+.guide-section h2,
+.help-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+}
 
-  <details>
-    <summary>Can I sign in with my personal Apple ID or iTunes account?</summary>
-    <p>No. Linking personal accounts is not permitted on council-issued devices.</p>
-  </details>
+.notice-card p,
+.help-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
 
-  <details>
-  <summary>How do I transfer contacts from my old Android or iPhone to my new iPhone?</summary>
-  <p><strong>Important:</strong> SCC iPhones do not support personal Apple IDs or iCloud. Please use the steps below to transfer contacts without using iCloud:</p>
+.guide-section {
+  padding: 26px;
+  margin-bottom: 28px;
+}
 
-  <h4>From Android to iPhone (Without iCloud)</h4>
-  <ol>
-    <li>On your Android, open the Contacts app.</li>
-    <li>Tap the menu (⋮ or ☰) and choose <strong>Export</strong>.</li>
-    <li>Export your contacts as a <code>.vcf</code> file and save it locally.</li>
-    <li>Email the <code>.vcf</code> file to your <strong>SCC email address</strong>.</li>
-    <li><strong>Important:</strong> On your new iPhone, <u>do not tap the .vcf file directly in Outlook</u> — this will only import the contacts into Outlook.</li>
-    <li>Instead, <strong>download the .vcf file to Files</strong>, then open it from the Files app and select <strong>Add Contacts</strong> when prompted.</li>
-  </ol>
+details {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin: 14px 0;
+  overflow: hidden;
+}
 
- <h4>From another iPhone (Without iCloud)</h4>
-<ol>
-  <li>On the old iPhone, open the <strong>Contacts</strong> app.</li>
-  <li>Tap your name or select <strong>All Contacts</strong>.</li>
-  <li>In the top right, tap <strong>Share</strong> and select <strong>Share Contact</strong>.</li>
-  <li>Choose <strong>All Contacts</strong>, then share via <strong>Outlook</strong>.</li>
-  <li>This will send a <code>.vcf</code> file to your SCC email.</li>
-  <li><strong>Important:</strong> On your new iPhone, do not tap the .vcf in Outlook — download it via <strong>Files</strong> and open it from there to import contacts properly.</li>
-</ol>
-</details>
+summary {
+  cursor: pointer;
+  font-weight: 800;
+  padding: 18px 20px;
+  list-style-position: inside;
+}
 
-  <details>
-    <summary>How do I check if my device is enroled correctly?</summary>
-    <p>Open the Company portal app, tap the Devices Icon at the bottom, you should see the device name listed and a green checkmark or 'compliant' status.</p>
-  </details>
+details[open] summary {
+  border-bottom: 1px solid var(--border);
+  background: #f8fbff;
+}
 
-  <details>
-    <summary>I cant see my work apps - what should I do?</summary>
-    <p>It my take a few minutes after set up to install all apps. Make sure you're connected to Wi-Fi or Mobile Data and keep the phone unlocked. If the issue persists, raise a Rubix Ticket</p>
-  </details>
-  
-  <details>
-    <summary>What should I do if the Company Portal app gets stuck or wont sign in?</summary>
-    <p>Restart your phone, ensure you are connected to Wi-Fi, and try again. If the issue persists, raise a Rubix ticket.</p>
-  </details>
-    
-  <details>
-    <summary>I forgot my passcode - what should I do?</summary>
-    <p>Unfortunately, IT cannot recover or bypass your passcode. The only solution is to perform a factory reset, which will erase all data and settings on the device. After resetting, you'll need to set up the phone again from scratch. Any unsaved data will be permanently lost.</p>
-  </details>
-  
-  <details>
-    <summary>How do I factory reset my phone?</summary>
-    <p><strong>Important:</strong> All files and data will be permanently erased and cannot be recovered</p> 
-    <p>Go to Settings> Transfer or Reset iPhone> Click <strong>Erase All Content and Settings</strong> Click <strong>Confirm</strong></p>
-  </details>
+details > p,
+details > ul,
+details > ol,
+details > h3,
+details > .info-box,
+details > img {
+  margin-left: 22px;
+  margin-right: 22px;
+}
 
-  <details>
-    <summary>How do I find the serial number of the phone?</summary>
-    <p>Go to Settings> General> About> The serial number will be displayed on this screen.</p>
-  </details>
+details > p:first-of-type,
+details > ul:first-of-type,
+details > ol:first-of-type {
+  margin-top: 18px;
+}
 
-  <details>
-    <summary>What should I do if my phone is lost or stolen?</summary>
-    <p>Log a ticket via Rubix immediatley. If stolen, include a police report reference. We will attempt a remote wipe, terminate any SIM contracts and issue a replacement if needed.</p>
-  </details>
+details > p:last-child,
+details > ul:last-child,
+details > ol:last-child {
+  margin-bottom: 22px;
+}
 
-  <details>
-    <summary>What happens if I leave the council?</summary>
-    <p>Your device must be returned to IT. All council data will be wiped remotely, and the device reset before reissue.</p>
-  </details>
+ul,
+ol {
+  padding-left: 24px;
+}
 
+li {
+  margin: 6px 0;
+}
 
+img {
+  display: block;
+  max-width: 520px;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 64, 128, 0.12);
+}
 
+.info-box {
+  background: #eaf3ff;
+  border-left: 5px solid var(--blue);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-top: 18px;
+  color: var(--text);
+}
 
+code {
+  background: #eef4fb;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
 
+.help-card {
+  padding: 26px;
+  display: grid;
+  grid-template-columns: 92px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 34px;
+}
 
+.help-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 18px;
+  background: #eaf3ff;
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+}
 
+.support-button {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 13px 22px;
+  border-radius: 8px;
+  white-space: nowrap;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
 
+.support-button:hover {
+  background: var(--blue);
+  color: #fff;
+}
 
+.footer {
+  background: #eaf3ff;
+  padding: 24px 0;
+  text-align: center;
+  color: var(--muted);
+}
 
+.footer p {
+  margin: 0;
+}
 
+@media (max-width: 850px) {
+  .wrap {
+    width: calc(100% - 32px);
+  }
 
+  .help-card {
+    grid-template-columns: 80px 1fr;
+  }
 
+  .support-button {
+    grid-column: 1 / -1;
+  }
+}
 
+@media (max-width: 560px) {
+  .hero {
+    padding: 30px 0 38px;
+  }
 
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .lead {
+    font-size: 1.08rem;
+  }
+
+  .meta span {
+    width: 100%;
+  }
+
+  .notice-card,
+  .guide-section,
+  .help-card {
+    padding: 20px;
+  }
+
+  details > p,
+  details > ul,
+  details > ol,
+  details > h3,
+  details > .info-box,
+  details > img {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .help-card {
+    grid-template-columns: 1fr;
+  }
+
+  .help-icon {
+    width: 68px;
+    height: 68px;
+    font-size: 2rem;
+  }
+}
