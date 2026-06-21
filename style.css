@@ -180,18 +180,24 @@ main.wrap {
 }
 
 .future-card {
-  border: 2px dashed #cbd8ea;
-  border-radius: 12px;
-  padding: 18px;
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 18px;
-  align-items: start;
+    border: 2px dashed #cbd8ea;
+    border-radius: 12px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 16px;
+    align-items: start;
 }
 
 .future-icon {
-  background: #fff0f8;
-  color: var(--magenta);
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: #fff0f8;
+    color: var(--magenta);
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
 }
 
 .future-card h3 {
