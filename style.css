@@ -99,7 +99,7 @@ main.wrap {
   border: 1px solid var(--border);
   border-bottom: 5px solid var(--blue);
   border-radius: 14px;
-  min-height: 210px;
+  min-height: 200px;
   padding: 26px;
   display: grid;
   grid-template-columns: 98px 1fr;
