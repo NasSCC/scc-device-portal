@@ -219,3 +219,53 @@ footer {
   .hero { padding: 42px 0; }
 }
 
+.back-link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 24px;
+    opacity: 0.95;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.help-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 92px 1fr auto;
+    gap: 24px;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: 0 10px 24px rgba(0,64,128,0.12);
+}
+
+.help-icon {
+    width: 82px;
+    height: 82px;
+    border-radius: 18px;
+    background: #eaf3ff;
+    display: grid;
+    place-items: center;
+    font-size: 2.4rem;
+}
+
+.support-button {
+    display: inline-block;
+    background: var(--blue);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.support-button:hover {
+    opacity: 0.9;
+}
