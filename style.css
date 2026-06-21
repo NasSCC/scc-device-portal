@@ -116,16 +116,10 @@ main.wrap {
   border-color: var(--blue);
 }
 
-.icon,
-.future-icon,
-.help-icon {
-    width: 110px;
-    height: 110px;
-    border-radius: 22px;
-    background: #eaf3ff;
-    display: grid;
-    place-items: center;
-    font-size: 3rem;
+.guide-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .guide-card h2 {
@@ -135,12 +129,14 @@ main.wrap {
 }
 
 .guide-card p {
-  margin: 0 0 28px;
+  margin: 0;
   color: var(--muted);
   font-size: 1.05rem;
 }
 
 .guide-card span {
+  margin-top: auto;
+  padding-top: 20px;
   color: var(--blue);
   font-weight: 700;
   font-size: 1.05rem;
