@@ -3,439 +3,398 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Windows 11 Laptop Setup (SCC)</title>
-  <meta name="description" content="Step-by-step Windows 11 laptop setup guide for SCC staff (Autopilot/Intune enrolment, MFA, PIN, Company Portal apps)." />
+  <title>Windows 11 Laptop Setup Guide</title>
+  <meta name="description" content="Step-by-step Windows 11 laptop setup guide for SCC staff." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="brand">
-  <img
-    src="images/scc-logo.png"
-    alt="Salford City Council"
-    class="logo"
-  />
-  <div>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-link" href="../">← Back to Device Portal</a>
+    <p class="eyebrow">Salford City Council IT Services</p>
     <h1>Windows 11 Laptop Setup Guide</h1>
-    <p class="subtitle">Follow these steps to set up your SCC staff laptop.</p>
-  </div>
-</div>
+    <p class="lead">Follow these steps to set up your SCC staff laptop.</p>
 
-
-      <div class="notice notice-strong">
-        <h2>Before you start</h2>
-        <p><strong>Plug the charger into the laptop before setup.</strong> Laptops are not fully charged. If the device powers off during setup, it can cause issues or require setup to be started again.</p>
-      </div>
-
-      <div class="notice">
-        <h2>What’s in the box</h2>
-        <ul>
-          <li>Windows laptop</li>
-          <li>Power charger</li>
-        </ul>
-        <p class="muted">If anything is missing, contact IT Support before continuing.</p>
-      </div>
-
-      <div class="tip">
-        <strong>Tip:</strong> Keep the laptop powered on and connected to Wi-Fi during setup.
-      </div>
+    <div class="meta">
+      <span>💻 SCC Windows laptop</span>
+      <span>⏱ Estimated time: 20–30 minutes</span>
+      <span>✅ New and existing staff</span>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <section class="steps">
+<div class="magenta-line"></div>
 
-      <div class="notice notice-info">
-  <div class="info-row">
+<main class="wrap">
+
+  <section class="notice-card">
+    <h2>Before you start</h2>
+    <p>
+      <strong>Plug the charger into the laptop before setup.</strong>
+      Laptops are not fully charged. If the device powers off during setup, it can cause issues or require setup to be started again.
+    </p>
+  </section>
+
+  <section class="guide-section">
+    <h2>What’s in the box</h2>
+    <ul>
+      <li>Windows laptop</li>
+      <li>Power charger</li>
+    </ul>
+    <p class="muted">If anything is missing, contact IT Support before continuing.</p>
+  </section>
+
+  <section class="info-card">
     <div class="info-icon">i</div>
-
-    <div class="info-content">
-      <strong>
-        If you have previously signed into an SCC laptop before,
-        you may see fewer setup screens during this process.
-      </strong>
-
+    <div>
+      <h2>Existing SCC laptop users</h2>
       <p>
-        New starters will usually see additional Microsoft
-        Authenticator and verification steps.
+        If you have previously signed into an SCC laptop before, you may see fewer setup screens during this process.
+        New starters will usually see additional Microsoft Authenticator and verification steps.
       </p>
     </div>
-  </div>
-</div>
+  </section>
 
-      <!-- Step 01 -->
-      <article class="step" id="step-01">
-        <div class="step-head">
-          <div class="step-num">01</div>
-          <div class="step-title">
-            <h3>Language</h3>
-            <p>Select your preferred language (e.g. <strong>English (United Kingdom)</strong>).</p>
+  <section class="guide-section">
+    <h2>Setup Guide</h2>
+
+    <article class="step" id="step-01">
+      <div class="step-head">
+        <div class="step-num">01</div>
+        <div class="step-title">
+          <h3>Language</h3>
+          <p>Select your preferred language, for example <strong>English (United Kingdom)</strong>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="step" id="step-02">
+      <div class="step-head">
+        <div class="step-num">02</div>
+        <div class="step-title">
+          <h3>Country / Region</h3>
+          <p>Select your country or region.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/02-region.png" alt="Country or region screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-03">
+      <div class="step-head">
+        <div class="step-num">03</div>
+        <div class="step-title">
+          <h3>Keyboard Layout</h3>
+          <p>Select your keyboard layout.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/03-keyboard.png" alt="Keyboard layout screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-04">
+      <div class="step-head">
+        <div class="step-num">04</div>
+        <div class="step-title">
+          <h3>Add Second Keyboard</h3>
+          <p>Select <strong>Skip</strong> if you do not need another keyboard layout.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/04-add-keyboard.png" alt="Add second keyboard screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-05">
+      <div class="step-head">
+        <div class="step-num">05</div>
+        <div class="step-title">
+          <h3>Connect to Wi-Fi</h3>
+          <p>Connect to a Wi-Fi network to continue setup.</p>
+          <div class="callout">
+            <strong>Setting up in an SCC office?</strong> Connect to <strong>SCC-Setup</strong>. IT Support can provide the password if needed.
+          </div>
+          <p class="muted">Otherwise, connect to your home Wi-Fi or another secure network.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/05-connect-wifi.png" alt="Connect to Wi-Fi screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-06">
+      <div class="step-head">
+        <div class="step-num">06</div>
+        <div class="step-title">
+          <h3>Checking for Updates</h3>
+          <p>Windows may briefly check for updates and <strong>restart automatically</strong>. This is normal.</p>
+          <p>If the laptop restarts, allow it to power back on and continue setup.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="step" id="step-07">
+      <div class="step-head">
+        <div class="step-num">07</div>
+        <div class="step-title">
+          <h3>Sign in with Work or School Account</h3>
+          <p>Sign in using your <strong>SCC email address and password</strong>.</p>
+          <div class="callout">
+            <strong>Important:</strong> You must see the <strong>Salford City Council</strong> logo on this sign-in screen.
           </div>
         </div>
-      </article>
+      </div>
+      <img class="step-img" src="images/07-signin-scc.png" alt="Work or school sign-in screen showing SCC branding" loading="lazy" />
+    </article>
 
-      <!-- Step 02 -->
-      <article class="step" id="step-02">
-        <div class="step-head">
-          <div class="step-num">02</div>
-          <div class="step-title">
-            <h3>Country / Region</h3>
-            <p>Select your country or region.</p>
+    <article class="step" id="step-08">
+      <div class="step-head">
+        <div class="step-num">08</div>
+        <div class="step-title">
+          <h3>Setting Up for Work or School</h3>
+          <p>Your device preparation and initial setup will begin automatically. Please wait.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/08-setup-work-school.png" alt="Setting up for work or school screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-09">
+      <div class="step-head">
+        <div class="step-num">09</div>
+        <div class="step-title">
+          <h3>Windows Sign-in Screen</h3>
+          <p>Sign in using your <strong>SCC email address and password</strong>.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/09-windows-signin.png" alt="Windows sign-in screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-10">
+      <div class="step-head">
+        <div class="step-num">10</div>
+        <div class="step-title">
+          <h3>Account Setup</h3>
+          <p>Windows continues setting up your work account. Please wait.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/10-account-setup.png" alt="Account setup screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-11">
+      <div class="step-head">
+        <div class="step-num">11</div>
+        <div class="step-title">
+          <h3>Fingerprint Setup</h3>
+          <p>You can set up fingerprint sign-in now or skip this step. On SCC laptops, the fingerprint sensor is built into the <strong>power button</strong>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="step" id="step-12">
+      <div class="step-head">
+        <div class="step-num">12</div>
+        <div class="step-title">
+          <h3>Start PIN Setup</h3>
+          <p>You will be asked to create a <strong>PIN</strong> for signing into your laptop.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/12-pin-start.png" alt="Start PIN setup screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-13">
+      <div class="step-head">
+        <div class="step-num">13</div>
+        <div class="step-title">
+          <h3>Keep Your Account Secure</h3>
+          <p>You will see a message about setting up another way to verify it is you. Select <strong>Next</strong> to continue.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/13-mfa-secure-account.png" alt="Keep your account secure prompt" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-14">
+      <div class="step-head">
+        <div class="step-num">14</div>
+        <div class="step-title">
+          <h3>Install Microsoft Authenticator</h3>
+          <p>Install the <strong>Microsoft Authenticator</strong> app on your phone.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/14-install-authenticator.png" alt="Install Microsoft Authenticator step" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-15">
+      <div class="step-head">
+        <div class="step-num">15</div>
+        <div class="step-title">
+          <h3>Authenticator Setup</h3>
+          <p>Open the Authenticator app and follow the on-screen steps. Select <strong>Next</strong> when ready.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/15-authenticator-setup.png" alt="Authenticator setup screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-16">
+      <div class="step-head">
+        <div class="step-num">16</div>
+        <div class="step-title">
+          <h3>Scan QR Code</h3>
+          <p>Use the Authenticator app to scan the QR code shown on screen.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/16-scan-qr.png" alt="Scan QR code screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-17">
+      <div class="step-head">
+        <div class="step-num">17</div>
+        <div class="step-title">
+          <h3>Add Phone Number</h3>
+          <p>Add your mobile phone number when prompted. Once added, MFA setup will complete.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="step" id="step-18">
+      <div class="step-head">
+        <div class="step-num">18</div>
+        <div class="step-title">
+          <h3>PIN Complete</h3>
+          <p>Return to Windows and complete your PIN setup.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/18-pin-complete.png" alt="PIN complete screen" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-19">
+      <div class="step-head">
+        <div class="step-num">19</div>
+        <div class="step-title">
+          <h3>Open Company Portal</h3>
+          <p>Use the <strong>taskbar search</strong> to find and open <strong>Company Portal</strong>.</p>
+        </div>
+      </div>
+      <img class="step-img" src="images/20-company-portal-search.png" alt="Search for Company Portal" loading="lazy" />
+    </article>
+
+    <article class="step" id="step-20">
+      <div class="step-head">
+        <div class="step-num">20</div>
+        <div class="step-title">
+          <h3>Select the SCC Catalogue</h3>
+          <p>When prompted, select:</p>
+          <div class="callout">
+            <strong>SCC Staff Laptops and Desktops</strong>
           </div>
         </div>
-        <img class="step-img" src="images/02-region.png" alt="Step 02 – Country or region screen" loading="lazy" />
-      </article>
+      </div>
+      <img class="step-img" src="images/21-company-portal-category.png" alt="Select SCC Staff Laptops and Devices catalogue" loading="lazy" />
+    </article>
 
-      <!-- Step 03 -->
-      <article class="step" id="step-03">
-        <div class="step-head">
-          <div class="step-num">03</div>
-          <div class="step-title">
-            <h3>Keyboard Layout</h3>
-            <p>Select your keyboard layout.</p>
+    <article class="step" id="step-21">
+      <div class="step-head">
+        <div class="step-num">21</div>
+        <div class="step-title">
+          <h3>Browse the App Catalogue</h3>
+          <p>In Company Portal, browse and install the apps you need, including SCC-approved software and printer drivers.</p>
+          <div class="callout">
+            <strong>Important:</strong> Please install <strong>FortiSASE</strong> from Company Portal.
           </div>
+          <p>If required, also install the <strong>Ricoh Printer Drivers</strong> for office printing.</p>
+          <p class="muted">Select an app and click <strong>Install</strong>. Apps may take a few minutes to appear or install.</p>
         </div>
-        <img class="step-img" src="images/03-keyboard.png" alt="Step 03 – Keyboard layout screen" loading="lazy" />
-      </article>
+      </div>
+      <img class="step-img" src="images/22-company-portal-catalogue.png" alt="Company Portal app catalogue" loading="lazy" />
+    </article>
+  </section>
 
-      <!-- Step 04 -->
-      <article class="step" id="step-04">
-        <div class="step-head">
-          <div class="step-num">04</div>
-          <div class="step-title">
-            <h3>Add Second Keyboard</h3>
-            <p>Select <strong>Skip</strong> if you don’t need another keyboard layout.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/04-add-keyboard.png" alt="Step 04 – Add second keyboard screen" loading="lazy" />
-      </article>
+  <section class="complete card">
+    <h2>Setup Complete</h2>
+    <p>Your SCC Windows laptop is now set up and ready to use.</p>
+    <p>Keep the laptop powered on while any remaining apps finish installing.</p>
+    <p class="muted">Guide version: v1.2</p>
+  </section>
 
-     <!-- Step 05 -->
-<article class="step" id="step-05">
-  <div class="step-head">
-    <div class="step-num">05</div>
-    <div class="step-title">
-      <h3>Connect to Wi-Fi</h3>
+  <section class="guide-section">
+    <h2>Common Questions</h2>
 
+    <details>
+      <summary>What if my laptop restarts during setup?</summary>
+      <p>This is normal. Let the laptop power back on and continue setup.</p>
+    </details>
+
+    <details>
+      <summary>What if I don’t see the Salford City Council logo when signing in?</summary>
+      <p>If the SCC logo is not shown, the laptop may not be enrolled correctly. Contact IT Support before continuing.</p>
+    </details>
+
+    <details>
+      <summary>Can I skip fingerprint setup?</summary>
+      <p>Yes. Fingerprint setup is optional and can be added later from Windows settings.</p>
+    </details>
+
+    <details>
+      <summary>What if I forget my PIN?</summary>
+      <p>You can reset your PIN after setup using the on-screen sign-in options or by contacting IT Support.</p>
+    </details>
+
+    <details>
+      <summary>Why do I need to set up Microsoft Authenticator?</summary>
+      <p>Authenticator is required to keep your SCC account secure and verify it is really you.</p>
+    </details>
+
+    <details>
+      <summary>Can I set up the laptop at home?</summary>
+      <p>Yes. You can complete setup using your home Wi-Fi.</p>
+    </details>
+
+    <details>
+      <summary>Which Wi-Fi should I use in the office?</summary>
+      <p>Connect to <strong>SCC-Setup</strong>. IT Support can provide the password if needed.</p>
+    </details>
+
+    <details>
+      <summary>My apps aren’t installing — what should I do?</summary>
+      <p>Some apps take time to appear or install. Keep the laptop powered on and connected to the internet.</p>
+    </details>
+
+    <details>
+      <summary>Where do I find Company Portal?</summary>
+      <p>Search for <strong>Company Portal</strong> using the Windows search bar and open the app.</p>
+    </details>
+
+    <details>
+      <summary>An app I need isn’t in Company Portal — how do I request it?</summary>
+      <p>Raise an application request in Rubix. Include the app name, a link to the app, whether it is free or licensed, and a brief business justification.</p>
+    </details>
+  </section>
+
+  <section class="help-card">
+    <div class="help-icon">🎧</div>
+    <div>
+      <h2>Need help?</h2>
       <p>
-        Connect to a Wi-Fi network to continue setup.
-      </p>
-
-      <p class="muted">
-        If setting up in an SCC office, connect to
-        <strong>SCC-Setup</strong>.
-        The password can be provided by IT if needed.
-        Otherwise connect to your home Wi-Fi.
+        If you experience issues during setup, please log an IT Support ticket or call
+        <strong>0161 793 3993</strong>.
       </p>
     </div>
-  </div>
+    <a class="support-button" href="https://myrubix.salford.gov.uk">
+      Log IT Support Ticket →
+    </a>
+  </section>
 
-  <img class="step-img" src="images/05-connect-wifi.png"
-       alt="Step 05 – Connect to Wi-Fi screen"
-       loading="lazy" />
-</article>
-
-      <!-- Step 06 (no image) -->
-      <article class="step" id="step-06">
-        <div class="step-head">
-          <div class="step-num">06</div>
-          <div class="step-title">
-            <h3>Checking for Updates</h3>
-            <p>Windows may briefly check for updates and <strong>restart automatically</strong>. This is normal.</p>
-            <p>If the laptop restarts, allow it to power back on and continue setup.</p>
-
-          </div>
-        </div>
-      </article>
-
-      <!-- Step 07 -->
-      <article class="step" id="step-07">
-        <div class="step-head">
-          <div class="step-num">07</div>
-          <div class="step-title">
-            <h3>Sign in with Work or School Account</h3>
-            <p>Sign in using your <strong>SCC email address and password</strong>.</p>
-            <p class="callout"><strong>Important:</strong> You must see the <strong>Salford City Council</strong> logo on this sign-in screen.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/07-signin-scc.png" alt="Step 07 – Work or school sign-in screen showing SCC branding" loading="lazy" />
-      </article>
-
-      <!-- Step 08 -->
-      <article class="step" id="step-08">
-        <div class="step-head">
-          <div class="step-num">08</div>
-          <div class="step-title">
-            <h3>Setting Up for Work or School</h3>
-            <p>Your device preparation and initial setup will begin automatically. Please wait.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/08-setup-work-school.png" alt="Step 08 – Setting up for work or school screen" loading="lazy" />
-      </article>
-
-      <!-- Step 09 -->
-      <article class="step" id="step-09">
-        <div class="step-head">
-          <div class="step-num">09</div>
-          <div class="step-title">
-            <h3>Windows Sign-in Screen</h3>
-            <p>Sign in using your <strong>SCC email address and password</strong> (blue Windows sign-in screen).</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/09-windows-signin.png" alt="Step 09 – Windows sign-in screen" loading="lazy" />
-      </article>
-
-      <!-- Step 10 -->
-      <article class="step" id="step-10">
-        <div class="step-head">
-          <div class="step-num">10</div>
-          <div class="step-title">
-            <h3>Account Setup</h3>
-            <p>Windows continues setting up your work account. Please wait.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/10-account-setup.png" alt="Step 10 – Account setup screen" loading="lazy" />
-      </article>
-
-      <!-- Step 11 -->
-      <article class="step" id="step-11">
-        <div class="step-head">
-          <div class="step-num">11</div>
-          <div class="step-title">
-            <h3>Fingerprint Setup (Optional)</h3>
-            <p>You can set up fingerprint sign-in now or skip this step. On SCC laptops, the fingerprint sensor is built into the <strong>power button</strong> — place your finger on it when prompted.</p>
-
-          </div>
-        </div>
-      </article>
-
-      <!-- Step 12 -->
-      <article class="step" id="step-12">
-        <div class="step-head">
-          <div class="step-num">12</div>
-          <div class="step-title">
-            <h3>Start PIN Setup</h3>
-            <p>You’ll be asked to create a <strong>PIN</strong> for signing into your laptop.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/12-pin-start.png" alt="Step 12 – Start PIN setup screen" loading="lazy" />
-      </article>
-
-      <!-- Step 13 -->
-      <article class="step" id="step-13">
-        <div class="step-head">
-          <div class="step-num">13</div>
-          <div class="step-title">
-            <h3>Keep Your Account Secure</h3>
-            <p>You’ll see a message about setting up another way to verify it’s you. Select <strong>Next</strong> to continue.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/13-mfa-secure-account.png" alt="Step 13 – Keep your account secure prompt" loading="lazy" />
-      </article>
-
-      <!-- Step 14 -->
-      <article class="step" id="step-14">
-        <div class="step-head">
-          <div class="step-num">14</div>
-          <div class="step-title">
-            <h3>Install Microsoft Authenticator</h3>
-            <p>Install the <strong>Microsoft Authenticator</strong> app on your phone.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/14-install-authenticator.png" alt="Step 14 – Install Microsoft Authenticator step" loading="lazy" />
-      </article>
-
-      <!-- Step 15 -->
-      <article class="step" id="step-15">
-        <div class="step-head">
-          <div class="step-num">15</div>
-          <div class="step-title">
-            <h3>Authenticator Setup</h3>
-            <p>Open the Authenticator app and follow the on-screen steps. Select <strong>Next</strong> when ready.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/15-authenticator-setup.png" alt="Step 15 – Authenticator setup screen" loading="lazy" />
-      </article>
-
-      <!-- Step 16 -->
-      <article class="step" id="step-16">
-        <div class="step-head">
-          <div class="step-num">16</div>
-          <div class="step-title">
-            <h3>Scan QR Code</h3>
-            <p>Use the Authenticator app to scan the QR code shown on screen.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/16-scan-qr.png" alt="Step 16 – Scan QR code screen" loading="lazy" />
-      </article>
-
-      <!-- Step 17 -->
-      <article class="step" id="step-17">
-        <div class="step-head">
-          <div class="step-num">17</div>
-          <div class="step-title">
-            <h3>Add Phone Number</h3>
-            <p>Add your mobile phone number when prompted. Once added, MFA setup will complete.</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Step 18 -->
-      <article class="step" id="step-18">
-        <div class="step-head">
-          <div class="step-num">18</div>
-          <div class="step-title">
-            <h3>PIN Complete</h3>
-            <p>Return to Windows and complete your PIN setup.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/18-pin-complete.png" alt="Step 18 – PIN complete screen" loading="lazy" />
-      </article>
-
-      <!-- Step 19 -->
-      <article class="step" id="step-19">
-        <div class="step-head">
-          <div class="step-num">19</div>
-          <div class="step-title">
-            <h3>Open Company Portal</h3>
-            <p>Use the <strong>taskbar search</strong> to find and open <strong>Company Portal</strong>.</p>
-          </div>
-        </div>
-        <img class="step-img" src="images/20-company-portal-search.png" alt="Step 20 – Search for Company Portal" loading="lazy" />
-      </article>
-
-      <!-- Step 20 -->
-      <article class="step" id="step-20">
-        <div class="step-head">
-          <div class="step-num">20</div>
-          <div class="step-title">
-            <h3>Select the SCC Catalogue</h3>
-            <p>When prompted, select:</p>
-            <p class="callout"><strong>SCC Staff Laptops and Desktops</strong></p>
-          </div>
-        </div>
-        <img class="step-img" src="images/21-company-portal-category.png" alt="Step 21 – Select SCC Staff Laptops and Devices catalogue" loading="lazy" />
-      </article>
-
-<!-- Step 21 -->
-<article class="step" id="step-21">
-  <div class="step-head">
-    <div class="step-num">21</div>
-    <div class="step-title">
-      <h3>Browse the App Catalogue</h3>
-
-      <p>
-        In Company Portal, browse and install the apps you need, including SCC-approved software and printer drivers.
-      </p>
-
-      <p class="callout">
-        <strong>Important:</strong> Please install <strong>FortiSASE</strong> from Company Portal.
-      </p>
-
-      <p>
-        If required, also install the <strong>Ricoh Printer Drivers</strong> for office printing.
-      </p>
-
-      <p class="muted">
-        Select an app and click <strong>Install</strong>. Apps may take a few minutes to appear or install.
-      </p>
-
+  <section class="help-card">
+    <div class="help-icon">🏠</div>
+    <div>
+      <h2>Finished?</h2>
+      <p>Return to the SCC Device Portal to access other setup and support guides.</p>
     </div>
-  </div>
+    <a class="support-button" href="../">
+      Back to Device Portal →
+    </a>
+  </section>
 
-  <img class="step-img" src="images/22-company-portal-catalogue.png" alt="Step 22 – Company Portal app catalogue" loading="lazy" />
-</article>
-
-    </section>
-
-<section class="footer-card">
-  <h2>What to do next</h2>
-  <ul>
-    <li>You can now start working.</li>
-    <li>Keep the laptop powered on while apps finish installing.</li>
-  </ul>
-  <p class="muted">Guide version: v1.2</p>
-</section>
-
-    <section class="footer-card">
-  <h2>Need Help?</h2>
-
-  <p>If you experience issues during setup, please contact IT Support.</p>
-
-  <ul>
-    <li>
-      💻 Log a Ticket:
-      <a href="https://myrubix.salford.gov.uk/" target="_blank">
-        Rubix Ticket
-      </a>
-    </li>
-
-    <li>
-      📘 IT Support Page:
-      <a href="https://myzone.salford.gov.uk/people-zone/ddat/i-need-it-support/" target="_blank">
-        Support & Guidance
-      </a>
-    </li>
-
-    <li>
-      📞 Phone:
-      <a href="tel:01617933993">0161 793 3993</a>
-    </li>
-  </ul>
-</section>
-
-<section class="faq">
-  <h2>Common questions</h2>
-
-  <p><strong>What if my laptop restarts during setup?</strong><br>
-  This is normal. Let the laptop power back on and continue setup.</p>
-
-  <p><strong>What if I don’t see the Salford City Council logo when signing in?</strong><br>
-  If the SCC logo is not shown, the laptop may not be enrolled correctly. Contact IT Support before continuing.</p>
-
-  <p><strong>Can I skip fingerprint setup?</strong><br>
-  Yes. Fingerprint setup is optional and can be added later from Windows settings.</p>
-
-  <p><strong>What if I forget my PIN?</strong><br>
-  You can reset your PIN after setup using the on-screen sign-in options or by contacting IT Support.</p>
-
-  <p><strong>Why do I need to set up Microsoft Authenticator?</strong><br>
-  Authenticator is required to keep your SCC account secure and verify it’s really you.</p>
-
-  <p><strong>Can I set up the laptop at home?</strong><br>
-  Yes. You can complete setup using your home Wi-Fi.</p>
-
-  <p><strong>Which Wi-Fi should I use in the office?</strong><br>
-  Connect to <strong>SCC-WiFi</strong>. You may need the latest password from IT.</p>
-
-  <p><strong>My apps aren’t installing — what should I do?</strong><br>
-  Some apps take time to appear or install. Keep the laptop powered on and connected to the internet.</p>
-
-  <p><strong>Where do I find Company Portal?</strong><br>
-  Search for <strong>Company Portal</strong> using the Windows search bar and open the app.</p>
-
-  <p><strong>An app I need isn’t in Company Portal — how do I request it?</strong><br>
-  Raise an application request in <strong>Rubix</strong>. Include the app name, a link to the app, whether it’s free or licensed, and a brief business justification.</p>
-
-  <p><strong>Who do I contact if I’m stuck?</strong><br>
-  Contact IT Support for help.</p>
-</section>
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <p class="muted">Salford City Council • Windows 11 Laptop Setup Guide</p>
-  </div>
+<footer>
+  <p>Salford City Council IT Services • OFFICIAL – Internal Use Only</p>
 </footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
