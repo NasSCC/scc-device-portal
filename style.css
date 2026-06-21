@@ -39,11 +39,9 @@ body {
 }
 
 .hero-inner {
-  min-height: 270px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+    min-height: 270px;
+    display: flex;
+    align-items: center;
 }
 
 .scc-logo {
@@ -78,29 +76,6 @@ body {
   height: 210px;
   position: relative;
   opacity: 0.38;
-}
-
-.skyline::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 8px;
-  width: 100%;
-  height: 150px;
-  border-bottom: 2px solid rgba(255,255,255,0.65);
-  background:
-    repeating-linear-gradient(
-      90deg,
-      transparent 0 32px,
-      rgba(255,255,255,0.6) 33px 35px,
-      transparent 36px 62px
-    );
-  clip-path: polygon(
-    0 100%, 8% 78%, 14% 100%, 22% 48%, 30% 100%,
-    38% 58%, 45% 100%, 52% 38%, 59% 100%,
-    66% 30%, 73% 100%, 80% 46%, 87% 100%,
-    93% 18%, 98% 100%, 100% 76%, 100% 100%
-  );
 }
 
 .magenta-line {
@@ -144,13 +119,13 @@ main.wrap {
 .icon,
 .future-icon,
 .help-icon {
-  width: 86px;
-  height: 86px;
-  border-radius: 18px;
-  background: #eaf3ff;
-  display: grid;
-  place-items: center;
-  font-size: 2.7rem;
+    width: 110px;
+    height: 110px;
+    border-radius: 22px;
+    background: #eaf3ff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
 }
 
 .guide-card h2 {
@@ -241,28 +216,33 @@ main.wrap {
 }
 
 .help-card {
-  padding: 22px 26px;
-  display: grid;
-  grid-template-columns: 90px 1fr auto;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 32px;
+    padding: 26px;
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    gap: 28px;
+    align-items: center;
+    margin-bottom: 32px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
 }
 
 .support-button {
-  border: 2px solid var(--blue);
-  color: var(--blue);
-  text-decoration: none;
-  font-weight: 700;
-  padding: 13px 22px;
-  border-radius: 8px;
-  white-space: nowrap;
-  transition: background 0.2s ease, color 0.2s ease;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 13px 22px;
+    border-radius: 8px;
+    white-space: nowrap;
+    text-align: center;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .support-button:hover {
-  background: var(--blue);
-  color: #fff;
+    background: var(--blue);
+    color: #fff;
 }
 
 .footer {
