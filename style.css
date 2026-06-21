@@ -1,9 +1,9 @@
 :root {
   --blue: #005eb8;
-  --dark-blue: #063765;
+  --blue-dark: #06345c;
   --navy: #061b3a;
   --magenta: #e6007e;
-  --bg: #f5f9ff;
+  --bg: #f4f8ff;
   --panel: #ffffff;
   --text: #061b3a;
   --muted: #4b5d78;
@@ -24,72 +24,82 @@ body {
 }
 
 .wrap {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1280px, calc(100% - 96px));
   margin: 0 auto;
 }
 
 .hero {
   background:
-    radial-gradient(circle at 70% 20%, rgba(0, 130, 255, 0.35), transparent 35%),
-    linear-gradient(135deg, var(--blue), var(--navy));
-  color: white;
-  padding: 38px 0 58px;
+    radial-gradient(circle at 70% 18%, rgba(0, 120, 255, 0.35), transparent 34%),
+    linear-gradient(135deg, #005eb8 0%, #06345c 55%, #061b3a 100%);
+  color: #fff;
+  padding: 42px 0 42px;
+  position: relative;
   overflow: hidden;
 }
 
 .hero-inner {
+  min-height: 270px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  align-items: end;
+  gap: 40px;
+  align-items: center;
 }
 
 .scc-logo {
-  width: 230px;
-  max-width: 80%;
-  margin-bottom: 28px;
+  width: 250px;
+  max-width: 85%;
+  margin-bottom: 24px;
 }
 
 .eyebrow {
   margin: 0 0 12px;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.95rem;
+  letter-spacing: 0.17em;
+  font-size: 0.98rem;
   opacity: 0.95;
 }
 
 .hero h1 {
   margin: 0 0 16px;
-  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-size: clamp(3.8rem, 6vw, 5.6rem);
   line-height: 1;
+  font-weight: 800;
 }
 
 .lead {
-  max-width: 620px;
   margin: 0;
-  font-size: 1.35rem;
+  max-width: 620px;
+  font-size: 1.28rem;
+  line-height: 1.45;
 }
 
 .skyline {
-  min-height: 190px;
-  opacity: 0.35;
+  height: 210px;
   position: relative;
+  opacity: 0.38;
 }
 
 .skyline::before {
   content: "";
   position: absolute;
-  inset: auto 0 0 0;
-  height: 110px;
-  border-bottom: 3px solid rgba(255,255,255,0.6);
+  right: 0;
+  bottom: 8px;
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid rgba(255,255,255,0.65);
   background:
-    linear-gradient(to top, transparent 0 35%, rgba(255,255,255,0.45) 36% 38%, transparent 39%),
-    repeating-linear-gradient(90deg, transparent 0 48px, rgba(255,255,255,0.55) 49px 51px, transparent 52px 76px);
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 32px,
+      rgba(255,255,255,0.6) 33px 35px,
+      transparent 36px 62px
+    );
   clip-path: polygon(
-    0 100%, 8% 65%, 16% 100%, 24% 45%, 31% 100%,
-    38% 35%, 45% 100%, 51% 55%, 57% 100%,
-    63% 25%, 70% 100%, 77% 48%, 84% 100%,
-    90% 18%, 96% 100%, 100% 70%, 100% 100%
+    0 100%, 8% 78%, 14% 100%, 22% 48%, 30% 100%,
+    38% 58%, 45% 100%, 52% 38%, 59% 100%,
+    66% 30%, 73% 100%, 80% 46%, 87% 100%,
+    93% 18%, 98% 100%, 100% 76%, 100% 100%
   );
 }
 
@@ -98,11 +108,15 @@ body {
   background: var(--magenta);
 }
 
+main.wrap {
+  padding-top: 36px;
+}
+
 .guide-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 26px;
-  margin: 36px 0 32px;
+  margin: 0 0 28px;
 }
 
 .guide-card {
@@ -110,11 +124,11 @@ body {
   border: 1px solid var(--border);
   border-bottom: 5px solid var(--blue);
   border-radius: 14px;
-  padding: 28px;
   min-height: 210px;
+  padding: 26px;
   display: grid;
-  grid-template-columns: 92px 1fr;
-  gap: 22px;
+  grid-template-columns: 98px 1fr;
+  gap: 24px;
   text-decoration: none;
   color: inherit;
   box-shadow: var(--shadow);
@@ -128,15 +142,15 @@ body {
 }
 
 .icon,
-.help-icon,
-.future-icon {
-  width: 82px;
-  height: 82px;
+.future-icon,
+.help-icon {
+  width: 86px;
+  height: 86px;
   border-radius: 18px;
   background: #eaf3ff;
   display: grid;
   place-items: center;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 .guide-card h2 {
@@ -146,7 +160,7 @@ body {
 }
 
 .guide-card p {
-  margin: 0 0 26px;
+  margin: 0 0 28px;
   color: var(--muted);
   font-size: 1.05rem;
 }
@@ -166,14 +180,14 @@ body {
 }
 
 .future-section {
-  padding: 28px;
-  margin-bottom: 28px;
+  padding: 26px;
+  margin-bottom: 24px;
 }
 
 .future-section h2,
 .help-card h2 {
   margin: 0 0 6px;
-  font-size: 1.7rem;
+  font-size: 1.75rem;
 }
 
 .future-section > p,
@@ -195,8 +209,8 @@ body {
   border-radius: 12px;
   padding: 18px;
   display: grid;
-  grid-template-columns: 86px 1fr;
-  gap: 16px;
+  grid-template-columns: 90px 1fr;
+  gap: 18px;
   align-items: start;
 }
 
@@ -207,7 +221,7 @@ body {
 
 .future-card h3 {
   margin: 2px 0 4px;
-  font-size: 1.1rem;
+  font-size: 1.12rem;
 }
 
 .future-card p {
@@ -227,12 +241,12 @@ body {
 }
 
 .help-card {
-  padding: 22px 28px;
+  padding: 22px 26px;
   display: grid;
-  grid-template-columns: 86px 1fr auto;
-  gap: 18px;
+  grid-template-columns: 90px 1fr auto;
+  gap: 20px;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .support-button {
@@ -248,7 +262,7 @@ body {
 
 .support-button:hover {
   background: var(--blue);
-  color: white;
+  color: #fff;
 }
 
 .footer {
@@ -257,7 +271,7 @@ body {
 }
 
 .footer-inner {
-  width: min(520px, calc(100% - 32px));
+  width: min(560px, calc(100% - 32px));
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -266,7 +280,7 @@ body {
 }
 
 .footer img {
-  width: 170px;
+  width: 175px;
 }
 
 .footer span {
@@ -280,7 +294,11 @@ body {
   font-size: 1.1rem;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1050px) {
+  .wrap {
+    width: min(900px, calc(100% - 48px));
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
   }
@@ -299,7 +317,7 @@ body {
   }
 
   .help-card {
-    grid-template-columns: 70px 1fr;
+    grid-template-columns: 80px 1fr;
   }
 
   .support-button {
@@ -309,13 +327,17 @@ body {
 }
 
 @media (max-width: 560px) {
+  .wrap {
+    width: calc(100% - 28px);
+  }
+
   .hero {
-    padding: 28px 0 44px;
+    padding: 30px 0 38px;
   }
 
   .scc-logo {
     width: 210px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   .hero h1 {
@@ -326,14 +348,18 @@ body {
     font-size: 1.1rem;
   }
 
+  main.wrap {
+    padding-top: 24px;
+  }
+
   .guide-card,
   .future-card {
     grid-template-columns: 1fr;
   }
 
   .icon,
-  .help-icon,
-  .future-icon {
+  .future-icon,
+  .help-icon {
     width: 68px;
     height: 68px;
     font-size: 2rem;
