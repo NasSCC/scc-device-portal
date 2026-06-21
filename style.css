@@ -33,15 +33,15 @@ body {
     radial-gradient(circle at 70% 18%, rgba(0, 120, 255, 0.35), transparent 34%),
     linear-gradient(135deg, #005eb8 0%, #06345c 55%, #061b3a 100%);
   color: #fff;
-  padding: 42px 0 42px;
+  padding: 42px 0;
   position: relative;
   overflow: hidden;
 }
 
 .hero-inner {
-    min-height: 270px;
-    display: flex;
-    align-items: center;
+  min-height: 270px;
+  display: flex;
+  align-items: center;
 }
 
 .scc-logo {
@@ -70,12 +70,6 @@ body {
   max-width: 620px;
   font-size: 1.28rem;
   line-height: 1.45;
-}
-
-.skyline {
-  height: 210px;
-  position: relative;
-  opacity: 0.38;
 }
 
 .magenta-line {
@@ -114,6 +108,16 @@ main.wrap {
   transform: translateY(-6px);
   box-shadow: 0 26px 60px rgba(0, 64, 128, 0.2);
   border-color: var(--blue);
+}
+
+.icon {
+  width: 86px;
+  height: 86px;
+  border-radius: 18px;
+  background: #eaf3ff;
+  display: grid;
+  place-items: center;
+  font-size: 2.6rem;
 }
 
 .guide-card > div:last-child {
@@ -176,24 +180,24 @@ main.wrap {
 }
 
 .future-card {
-    border: 2px dashed #cbd8ea;
-    border-radius: 12px;
-    padding: 18px;
-    display: grid;
-    grid-template-columns: 72px 1fr;
-    gap: 16px;
-    align-items: start;
+  border: 2px dashed #cbd8ea;
+  border-radius: 12px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 16px;
+  align-items: start;
 }
 
 .future-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 14px;
-    background: #fff0f8;
-    color: var(--magenta);
-    display: grid;
-    place-items: center;
-    font-size: 1.8rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: #fff0f8;
+  color: var(--magenta);
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
 }
 
 .future-card h3 {
@@ -218,33 +222,39 @@ main.wrap {
 }
 
 .help-card {
-    padding: 26px;
-    display: grid;
-    grid-template-columns: 110px 1fr auto;
-    gap: 28px;
-    align-items: center;
-    margin-bottom: 32px;
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    box-shadow: var(--shadow);
+  padding: 26px;
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.help-icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 20px;
+  background: #eaf3ff;
+  display: grid;
+  place-items: center;
+  font-size: 2.7rem;
 }
 
 .support-button {
-    border: 2px solid var(--blue);
-    color: var(--blue);
-    text-decoration: none;
-    font-weight: 700;
-    padding: 13px 22px;
-    border-radius: 8px;
-    white-space: nowrap;
-    text-align: center;
-    transition: background 0.2s ease, color 0.2s ease;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 13px 22px;
+  border-radius: 8px;
+  white-space: nowrap;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .support-button:hover {
-    background: var(--blue);
-    color: #fff;
+  background: var(--blue);
+  color: #fff;
 }
 
 .footer {
@@ -279,14 +289,6 @@ main.wrap {
 @media (max-width: 1050px) {
   .wrap {
     width: min(900px, calc(100% - 48px));
-  }
-
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .skyline {
-    display: none;
   }
 
   .guide-grid,
