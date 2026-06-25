@@ -80,6 +80,8 @@ main.wrap {
   padding-top: 36px;
 }
 
+/* Main guide cards */
+
 .guide-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -92,11 +94,11 @@ main.wrap {
   border: 1px solid var(--border);
   border-bottom: 5px solid var(--blue);
   border-radius: 14px;
-  min-height: 220px;
+  min-height: 235px;
   padding: 26px;
   display: grid;
-  grid-template-columns: 86px 1fr;
-  gap: 22px;
+  grid-template-columns: 72px 1fr;
+  gap: 18px;
   text-decoration: none;
   color: inherit;
   box-shadow: var(--shadow);
@@ -109,37 +111,33 @@ main.wrap {
   border-color: var(--blue);
 }
 
-.icon,
-.future-icon,
-.help-icon {
+.icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
   background: #eaf3ff;
   display: grid;
   place-items: center;
 }
 
-.icon {
-  width: 76px;
-  height: 76px;
-  border-radius: 18px;
-}
-
-.icon img,
-.future-icon img {
-  width: 44px;
-  height: 44px;
+.icon img {
+  width: 38px;
+  height: 38px;
   object-fit: contain;
 }
 
 .guide-card > div:last-child {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 
 .guide-card h2 {
-  margin: 4px 0 10px;
+  margin: 2px 0 12px;
   font-size: 1.25rem;
-  line-height: 1.25;
+  line-height: 1.15;
+  min-height: 72px;
 }
 
 .guide-card p {
@@ -155,6 +153,8 @@ main.wrap {
   font-weight: 700;
   font-size: 1.02rem;
 }
+
+/* Future guide section */
 
 .future-section,
 .help-card {
@@ -203,6 +203,15 @@ main.wrap {
   width: 60px;
   height: 60px;
   border-radius: 14px;
+  background: #eaf3ff;
+  display: grid;
+  place-items: center;
+}
+
+.future-icon img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .future-card h3 {
@@ -217,8 +226,7 @@ main.wrap {
 
 .future-card span {
   display: inline-block;
-  width: auto;
-  max-width: fit-content;
+  width: fit-content;
   padding: 3px 10px;
   border: 1px solid #ff8bc7;
   border-radius: 999px;
@@ -227,6 +235,8 @@ main.wrap {
   font-size: 0.85rem;
   font-weight: 700;
 }
+
+/* Help card */
 
 .help-card {
   padding: 26px;
@@ -241,6 +251,9 @@ main.wrap {
   width: 92px;
   height: 92px;
   border-radius: 20px;
+  background: #eaf3ff;
+  display: grid;
+  place-items: center;
   font-size: 2.7rem;
 }
 
@@ -260,6 +273,8 @@ main.wrap {
   background: var(--blue);
   color: #fff;
 }
+
+/* Footer */
 
 .footer {
   background: #eaf3ff;
@@ -289,6 +304,8 @@ main.wrap {
   margin: 0;
   font-size: 1.1rem;
 }
+
+/* Responsive */
 
 @media (max-width: 1250px) {
   .guide-grid {
@@ -349,6 +366,10 @@ main.wrap {
     grid-template-columns: 1fr;
   }
 
+  .guide-card h2 {
+    min-height: auto;
+  }
+
   .icon,
   .future-icon,
   .help-icon {
@@ -358,8 +379,8 @@ main.wrap {
 
   .icon img,
   .future-icon img {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
   }
 
   .footer-inner {
