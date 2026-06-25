@@ -166,6 +166,15 @@ img {
   margin: 10px 0 0;
 }
 
+.info-icon {
+    font-size: 2.3rem;
+    line-height: 1;
+    min-width: 48px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .section-banner {
   background: var(--blue-dark);
   color: #ffffff;
