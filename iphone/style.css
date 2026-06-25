@@ -95,38 +95,198 @@ main.wrap {
   padding-top: 34px;
 }
 
-.notice-card,
-.guide-section,
-.help-card {
+/* Overview */
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.overview-card {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 16px;
   box-shadow: var(--shadow);
+  padding: 24px;
 }
 
-.notice-card {
+.overview-card h2 {
+  margin: 0 0 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #eaf3ff;
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+}
+
+.overview-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.overview-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Info cards */
+
+.info-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 7px solid var(--magenta);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
   padding: 26px;
   margin-bottom: 28px;
-  border-left: 7px solid var(--magenta);
 }
 
-.notice-card h2,
-.guide-section h2,
-.help-card h2 {
-  margin: 0 0 8px;
+.info-card h2 {
+  margin: 0 0 10px;
   font-size: 1.7rem;
 }
 
-.notice-card p,
-.help-card p {
-  margin: 0;
+.info-card p {
+  margin: 10px 0 0;
   color: var(--muted);
   font-size: 1.05rem;
 }
 
-.guide-section {
+.info-card ul {
+  margin: 10px 0 0;
+}
+
+/* Section banners */
+
+.section-banner {
+  background: var(--blue-dark);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 26px;
+  margin: 32px 0 18px;
+  box-shadow: var(--shadow);
+}
+
+.section-banner p {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.82rem;
+  font-weight: 800;
+  opacity: 0.85;
+}
+
+.section-banner h2 {
+  margin: 0 0 8px;
+  font-size: 1.85rem;
+}
+
+.section-banner span {
+  display: block;
+  opacity: 0.9;
+}
+
+/* Steps */
+
+.step {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 22px;
+  padding: 26px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  gap: 28px;
+  align-items: center;
+}
+
+.step-text {
+  min-width: 0;
+}
+
+.step-number {
+  display: inline-block;
+  background: #eaf3ff;
+  color: var(--blue);
+  border: 1px solid #cfe0f5;
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.step h3 {
+  margin: 0 0 10px;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.step p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.step ul,
+.step ol {
+  padding-left: 24px;
+  margin: 12px 0 0;
+}
+
+.step li {
+  margin: 6px 0;
+}
+
+.step img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #ffffff;
+  border: 1px solid #d6e3f3;
+  border-radius: 12px;
+  box-shadow:
+    0 2px 8px rgba(0, 40, 90, 0.05),
+    0 1px 2px rgba(0, 40, 90, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step img:hover {
+  transform: scale(1.01);
+  box-shadow:
+    0 8px 18px rgba(0, 40, 90, 0.09),
+    0 2px 4px rgba(0, 40, 90, 0.06);
+}
+
+.note-box {
+  background: #eaf3ff;
+  border-left: 5px solid var(--blue);
+  border-radius: 10px;
+  padding: 15px 17px;
+  margin-top: 16px;
+  color: var(--text);
+}
+
+/* FAQ */
+
+.faq-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
   padding: 26px;
   margin-bottom: 28px;
+}
+
+.faq-section h2 {
+  margin: 0 0 14px;
+  font-size: 1.7rem;
 }
 
 details {
@@ -152,16 +312,15 @@ details[open] summary {
 details > p,
 details > ul,
 details > ol,
-details > h3,
-details > .info-box,
-details > img {
+details > h3 {
   margin-left: 22px;
   margin-right: 22px;
 }
 
 details > p:first-of-type,
 details > ul:first-of-type,
-details > ol:first-of-type {
+details > ol:first-of-type,
+details > h3:first-of-type {
   margin-top: 18px;
 }
 
@@ -171,33 +330,9 @@ details > ol:last-child {
   margin-bottom: 22px;
 }
 
-ul,
-ol {
-  padding-left: 24px;
-}
-
-li {
-  margin: 6px 0;
-}
-
-img {
-  display: block;
-  max-width: 520px;
-  width: 100%;
-  margin-top: 18px;
-  margin-bottom: 22px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 10px 24px rgba(0, 64, 128, 0.12);
-}
-
-.info-box {
-  background: #eaf3ff;
-  border-left: 5px solid var(--blue);
-  border-radius: 10px;
-  padding: 16px 18px;
-  margin-top: 18px;
-  color: var(--text);
+details h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
 }
 
 code {
@@ -206,13 +341,19 @@ code {
   border-radius: 5px;
 }
 
+/* Help cards */
+
 .help-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
   padding: 26px;
   display: grid;
   grid-template-columns: 92px 1fr auto;
   gap: 24px;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .help-icon {
@@ -223,6 +364,17 @@ code {
   display: grid;
   place-items: center;
   font-size: 2.4rem;
+}
+
+.help-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+}
+
+.help-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
 }
 
 .support-button {
@@ -242,6 +394,8 @@ code {
   color: #fff;
 }
 
+/* Footer */
+
 .footer {
   background: #eaf3ff;
   padding: 24px 0;
@@ -253,9 +407,19 @@ code {
   margin: 0;
 }
 
-@media (max-width: 850px) {
-  .wrap {
-    width: calc(100% - 32px);
+/* Responsive */
+
+@media (max-width: 950px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    grid-template-columns: 1fr;
+  }
+
+  .step img {
+    max-width: 520px;
   }
 
   .help-card {
@@ -268,6 +432,10 @@ code {
 }
 
 @media (max-width: 560px) {
+  .wrap {
+    width: calc(100% - 32px);
+  }
+
   .hero {
     padding: 30px 0 38px;
   }
@@ -284,18 +452,27 @@ code {
     width: 100%;
   }
 
-  .notice-card,
-  .guide-section,
+  .overview-card,
+  .info-card,
+  .section-banner,
+  .step,
+  .faq-section,
   .help-card {
     padding: 20px;
+  }
+
+  .section-banner h2 {
+    font-size: 1.55rem;
+  }
+
+  .step h3 {
+    font-size: 1.28rem;
   }
 
   details > p,
   details > ul,
   details > ol,
-  details > h3,
-  details > .info-box,
-  details > img {
+  details > h3 {
     margin-left: 16px;
     margin-right: 16px;
   }
