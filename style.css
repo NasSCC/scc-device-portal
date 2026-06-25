@@ -122,6 +122,14 @@ main.wrap{
   font-size:2.6rem;
 }
 
+.icon img,
+.future-icon img,
+.help-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
 .guide-card>div:last-child{
   display:flex;
   flex-direction:column;
